@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.crazy.food.app.crazyfood.AuthenticateUser">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/sliderlayoutheight" />
+
+            <LinearLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_100"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_welbtn_width"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ThemeOverlay.FirebaseIcon"
+                        android:layout_width="@dimen/imagewelcomewidth"
+                        android:layout_height="@dimen/imagewelcomeheight"
+                        android:contentDescription="@string/desc_firebase_lockup"
+                        android:src="@drawable/firebaselockupimage" />
+
+                    <TextView
+                        android:id="@+id/status"
+                        style="@style/ThemeOverlay.MyTextDetail"
+                        android:text="@string/signedout" />
+
+                    <TextView
+                        android:id="@+id/detail"
+                        style="@style/ThemeOverlay.MyTextDetail"
+                        tools:text="@string/firebaseuserid" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/main_welbtn_width"
+                    android:layout_weight="1"
+                    android:background="@color/grey_300">
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible"
+                        tools:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/sign_out_and_disconnect"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/laypadding"
+                        android:paddingEnd="@dimen/laypadding"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <Button
+                                android:id="@+id/sign_out_button"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="@dimen/main_welbtn_width"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/signout"
+                                android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+                            <Button
+                                android:id="@+id/disconnect_button"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="@dimen/main_welbtn_width"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/disconnect"
+                                android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+                            <Button
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="@dimen/main_welbtn_width"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="gotorecipe"
+                                android:text="@string/recipebtnmaingoing"
+                                android:theme="@style/ThemeOverlay.MyDarkButton" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/admargin"
+                android:layout_marginStart="@dimen/admargin"
+                android:layout_marginEnd="@dimen/admargin"
+                android:layout_marginTop="@dimen/admargintop"
+                android:background="@color/color_black"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-6336523906622902/1584570296"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+k
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.AppBarLayout>

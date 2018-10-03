@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/id_second_layout_scrollview"
+    tools:context="com.crazy.food.app.crazyfood.SecondFoodDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/image_constraint" />
+
+        <TextView
+            android:id="@+id/id_second_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_layout_argin"
+            android:text="@string/title_display"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_main_titlle_size" />
+
+        <include layout="@layout/second_detail_specific" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/textmarginsecond"
+            android:text="@string/instructions_display"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_ins_title_size" />
+
+        <TextView
+            android:id="@+id/id_second_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layoutmargin"
+            android:paddingStart="@dimen/paddingleftinstructions"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_instruction_size"
+            tools:ignore="RtlCompat,RtlSymmetry" />
+    </LinearLayout>
+
+</ScrollView>

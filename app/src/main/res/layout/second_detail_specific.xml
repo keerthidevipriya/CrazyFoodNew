@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margintextcategory"
+            android:text="@string/category"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_ins_title_size" />
+
+        <TextView
+            android:id="@+id/id_second_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margintextcategory"
+            android:paddingStart="@dimen/margin_layout"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_instruction_size"
+            tools:ignore="RtlCompat,RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margintextcategory"
+            android:text="@string/area"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_ins_title_size" />
+
+        <TextView
+            android:id="@+id/id_second_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margintextcategory"
+            android:paddingStart="@dimen/margin_layout"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_instruction_size"
+            tools:ignore="RtlCompat,RtlSymmetry"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_second_tv_playvideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/constrantmargin"
+        android:background="@color/color_almost_pink"
+        android:elevation="@dimen/elevation_text_play_video"
+        android:padding="@dimen/padding_text_video"
+        android:paddingStart="@dimen/margin_layout"
+        android:text="@string/click_here_to_play_video"
+        android:textAlignment="center"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_play_veodo_display_size"
+        tools:targetApi="lollipop"
+        tools:ignore="RtlCompat,RtlSymmetry" />
+
+</LinearLayout>

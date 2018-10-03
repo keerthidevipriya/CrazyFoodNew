@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">0dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30sp</dimen>
+    <dimen name="slide_desc">16sp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+    <dimen name="icon_top_margin">24dp</dimen>
+    <dimen name="icon_bottom_margin">24dp</dimen>
+    <dimen name="admargintop">50dp</dimen>
+    <dimen name="admargin">16dp</dimen>
+    <dimen name="laypadding">16dp</dimen>
+    <dimen name="imagewelcomewidth">50dp</dimen>
+    <dimen name="imagewelcomeheight">55dp</dimen>
+    <dimen name="sliderlayoutheight">200dp</dimen>
+    <dimen name="cardlayoutelevation">5dp</dimen>
+    <dimen name="imagemainheight">220dp</dimen>
+    <dimen name="iagemargin">3dp</dimen>
+    <dimen name="text_main_titlle_size">20sp</dimen>
+    <dimen name="paddingtext">10dp</dimen>
+    <dimen name="layoutmargin">3dp</dimen>
+    <dimen name="textmarginsecond">5dp</dimen>
+    <dimen name="text_layout_argin">5dp</dimen>
+    <dimen name="paddingleftinstructions">5dp</dimen>
+    <dimen name="layout_height_view">1dp</dimen>
+    <dimen name="text_instruction_size">15sp</dimen>
+    <dimen name="text_ins_title_size">17sp</dimen>
+    <dimen name="margin_layout">5dp</dimen>
+    <dimen name="margintextcategory">2dp</dimen>
+    <dimen name="padding_text_video">22dp</dimen>
+    <dimen name="margintop_hellofood">20dp</dimen>
+    <dimen name="margin_layout_widget">8dp</dimen>
+    <dimen name="widget_text_size_display">13sp</dimen>
+    <dimen name="main_welbtn_width">0dp</dimen>
+    <dimen name="cardviewlayoutmargin">1dp</dimen>
+    <dimen name="imageview_height">250dp</dimen>
+    <dimen name="favimage_height">37dp</dimen>
+    <dimen name="favimagemarginbotom">8dp</dimen>
+    <dimen name="favimagemargin">3dp</dimen>
+    <dimen name="marginlayoutimagesecond">2dp</dimen>
+    <dimen name="constraintlayoutheight">270dp</dimen>
+    <dimen name="constrantmargin">2dp</dimen>
+    <dimen name="elevation_text_play_video">5dp</dimen>
+    <dimen name="text_play_veodo_display_size">19sp</dimen>
+    <dimen name="d">10sp</dimen>
+    <dimen name="sa">10sp</dimen>
+</resources>

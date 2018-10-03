@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_starters"
+        android:title="@string/startersm" />
+    <item
+        android:id="@+id/menu_vegetarian"
+        android:title="@string/vegetarianm" />
+    <item
+        android:id="@+id/menu_nonveg"
+        android:title="@string/non_vegetarianm"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/menu_chicken"
+                android:title="@string/chickenm" />
+            <item
+                android:id="@+id/menu_seafood"
+                android:title="@string/seafoodm" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_desert"
+        android:title="@string/desertm" />
+    <item
+        android:id="@+id/menu_favourites"
+        android:title="@string/favouritesm" />
+</menu>

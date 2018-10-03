@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/constraintlayoutheight"
+    android:layout_margin="@dimen/constrantmargin">
+
+    <ImageView
+        android:id="@+id/second_backgraph"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/imageview_height"
+        android:layout_margin="@dimen/marginlayoutimagesecond"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher_round"
+        android:contentDescription="@string/welcome_image" />
+
+    <ImageView
+        android:id="@+id/second_fav_img"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/favimage_height"
+        android:layout_marginBottom="@dimen/favimagemarginbotom"
+        android:layout_marginEnd="@dimen/favimagemargin"
+        android:layout_marginStart="@dimen/favimagemargin"
+        android:layout_marginTop="@dimen/favimagemarginbotom"
+        android:background="@drawable/design"
+        android:clickable="true"
+        android:src="@mipmap/favimage"
+        android:onClick="addFavListImg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/fav"
+        android:focusable="true" />
+
+</android.support.constraint.ConstraintLayout>
